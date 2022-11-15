@@ -212,9 +212,13 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 320px;
     width: 100%;
     background: #FFFFFF;
-    opacity: .5;
     color: #590242;
     padding-bottom: 5px;
+
+}
+
+#trending figcaption:first-child {
+    opacity: .5;
 
 }
 
