@@ -11,7 +11,7 @@ body {
     background-color: #FFFFFF;
     font-family: Raleway, sans-serif;
     width: 375px;
-    margin: auto 0;
+    margin: auto;
     
 }
 
@@ -42,14 +42,16 @@ footer {
 dd {
     font-size: 16pt;
     color: #590242;
-    position: relative;   
+    
+
 }
 
 dt {
     font-weight: 100;
     font-size: 14pt;
     color: #FFFFFF; 
-    position: relative; 
+    
+
 }
 
 
@@ -58,6 +60,7 @@ h1 {
     font-weight: Bold;
     font-size: 20pt;
     color: #FFFFFF;
+
 }
 
 h2 {
@@ -75,12 +78,17 @@ h3 {
 
 }
 
-header p {
-    font-size: 20pt;
-    color: #FFFFFF;   
+h4 {
+    color: #FFFFFF;
 }
 
-/* Hamburger Menu (my input) */
+header p {
+    font-size: 20pt;
+    color: #FFFFFF;  
+
+}
+
+/* Hamburger Menu */
 
 
 
@@ -90,6 +98,7 @@ header p {
     top: 10px;
     font-size: 20pt;
     position: absolute;
+
 }
 
 nav a {
@@ -97,6 +106,7 @@ nav a {
     color: #FFFFFF;
     display: block;
     padding: 20px;
+
 }
 
 a:hover {
@@ -106,6 +116,7 @@ a:hover {
 
 nav li {
     list-style: none;
+
 }
 
 
@@ -167,84 +178,19 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-/* playlists/curated*/
-
-
-.playlist, .curated h3 {
-    font-weight: bold;
-    font-size: 16pt;
-    color: #FFFFFF;    
-}
-
-.curated p:first-child  {
-    text-transform: uppercase; 
-    font-size: 16pt;
-    color: #FFFFFF;
-    font-weight: bold; 
-}
-
-.playlist, .curated {
-    background-color: #020873;
-    gap: 10px;
-    display: flex;
-    overflow: auto;
-}
-
-.playlist, .curated p {
-    font-weight: lighter;
-    color: #FFFFFF;
-
-}
-
-
-
-.playlist figure {
-    background-color: #030A8C;
-    margin: 5px;
-    padding: 5px;
-}
-
-.playlist figcaption {
-    width: 100%;
-    text-align: center;
-}
-
-.curated figcaption {
-    width: 100%;
-    text-align: center;
-}
-
-.curated figure {
-    background-color: #030A8C;
-    margin: 5px;
-    padding: 5px;
-}
-
-
-.more-btn {
-    color: #FFFFFF;
-    background-color: #590242;
-    border-radius: 5px;
-    font-weight: Bold;
-    font-size: 14pt;
-
-} 
-
-
-
-
 /*Trending*/
 
 #trending {
     display: flex;
     overflow:  auto;
-    white-space: nowrap;
+
 }
 
 #trending h3 {
-    font-weight: Bold;
+    font-weight: bold;
     font-size: 16pt;
-    color: #590242;   
+    color: #590242;  
+
 }
 
 #trending p:first-child {
@@ -252,11 +198,13 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     font-weight: bold;
     font-size: 16pt;
     padding-top: 5px;
+
 }
 
 #trending figure {
     position: relative;
     margin: 10px;
+
 }
 
 #trending figcaption {
@@ -267,6 +215,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     opacity: .5;
     color: #590242;
     padding-bottom: 5px;
+
 }
 
 #trending audio {
@@ -280,13 +229,87 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #trending p {
     margin-left: 10px;
     height: 15px;
-    opacity: .5;
+
 }
 
 #trending p:first-child {
     color: #590242;
     padding-top: 5px;
+
 }
+
+/* playlists/curated*/
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.playlist {
+    background-color: #2699FB;
+    display: flex;
+    overflow: auto; 
+}
+
+
+.playlist, .curated p {
+    font-weight: lighter;
+    color: #FFFFFF;
+
+}
+
+
+
+.playlist figure {
+    background-color: #0D8DFB;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.playlist figcaption {
+    width: 100%;
+    text-align: center;
+
+}
+
+.curated {
+    background-color: #030A8C;
+    display: flex;
+    overflow: auto;
+
+}
+
+.curated figure {
+    background-color: #020873;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+
+.curated figcaption {
+    text-align: center;
+
+}
+
+.curated figure:hover {
+    background-color: #590242;
+}
+
+
+#more-btn {
+    color: #FFFFFF;
+    background-color: #590242;
+    border-radius: 5px;
+    font-weight: Bold;
+    font-size: 14pt;
+
+} 
+
 
 /* button */
 
@@ -297,12 +320,18 @@ button {
     font-size: 14pt;
     margin-top: 10px;
     margin-left: 15px;
-    border-radius: 5px;
-    position: relative;
+    border-radius: 2px;
+
 }
 
 button:hover {
     background-color: #020659;
+
+}
+
+#more-btn:hover{
+    background-color: #020659;
+
 }
 
 /*Provided styling-audio*/
@@ -310,7 +339,6 @@ button:hover {
 audio::-webkit-media-controls-mute-button {
     background-color: #FFFFFF;
     border-radius: 50%;
-
 
 }
 audio::-webkit-media-controls-play-button {
@@ -321,26 +349,30 @@ audio::-webkit-media-controls-play-button {
 audio::-webkit-media-controls-enclosure {
     background-color: #FFFFFF;
 
-
 }
 
 
 /*Provided styling-scroll*/
-.trending::-webkit-scrollbar {
+#trending::-webkit-scrollbar {
     width: 100px;
+    border-radius: 20px;
+
 }
-.trending::-webkit-scrollbar-track {
+#trending::-webkit-scrollbar-track {
     background: #C6A9BE;
 
-}
-.trending::-webkit-scrollbar-thumb {
-    background: #590242;
-    width: 100px;
-    border-radius: 5px;
 
 }
-.trending::-webkit-scrollbar-thumb:hover {
+#trending::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+}
+#trending::-webkit-scrollbar-thumb:hover {
     background: #020659;
+    border: 5px solid #000000;
+
 }
 .playlist::-webkit-scrollbar, .curated::-webkit-scrollbar {
     width: 100px;
@@ -348,115 +380,141 @@ audio::-webkit-media-controls-enclosure {
 }
 .playlist::-webkit-scrollbar-track, .curated::-webkit-scrollbar-track  {
     background: #030A8C;
+
 }
 .playlist::-webkit-scrollbar-thumb, .curated::-webkit-scrollbar-thumb {
     background: #020659;
-    width: 100px;
     border-radius: 5px;
+
 }
 .playlist::-webkit-scrollbar-thumb:hover, .curated::-webkit-scrollbar-thumb:hover {
     background-color: #FFFFFF;
+
 } 
 
 /* media screen section*/
 @media screen and (min-width: 834px) {
     html {
         margin: 0 auto;
+
     }
     body {
         width: 834px;
         margin: 0 auto;
-    }
-     ul {
-        display: inline-block;
-        }
-    nav li {
-        text-align: center;
-        width: 100%;
-        text-transform: uppercase;
-    }
-    .playlist, .curated {
-        flex-direction: column;
-    }
-    .playlist figure, .curated figure {
-        height: 150px;
-    }
-    .playlist img, .curated img {
-        float: left;
-    }
-    .playlist {
-        overflow-y: scroll;
-        height: 600px;
-        display: initial;
-    }
-    #trend-btn {
-        position: relative;
-        float: right;
-        margin-right: 15px;
-    }
-    div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .playlist {
-        grid-column-start: 1;
-        grid-column-end: 1;
-    }
-    #all-btn {
-        width: max-content;
-        height: max-content;
-        left: 200px;
-    }
+        font-family: "Raleway" sans-serif;
 
-    #more-btn {
-        width: 150px;
-        position: relative;
-        bottom: 95px;
-        left: 200px;
     }
-
-    .curated {
-        grid-column-start: 2;
-        grid-column-end: 2;
-    }
-
-    .curated {
-        grid-row-start: 1;
-        overflow: scroll;
-        height: 600px;
-        overflow-x: hidden;
-        display: initial;
-    }
-    .playlist::-webkit-scrollbar, .curated::-webkit-scrollbar {
-        width: 10px;
-    }
+    
     ul {
+        display: inline-block;
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
     }
+    nav li {
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+
+    }
+
+
     label span, input {
         display: none;
+
     }
+
+    .playlist figure, .curated figure {
+        height: 150px;
+
+    }
+    .playlist img, .curated img {
+        float: left;
+
+    }
+    .playlist, .curated {
+        height: 600px;
+        display: inline-grid;
+        text-align: left;
+
+
+    }
+    #trend-btn {
+        position: relative;
+        float: right;
+        margin-right: 15px;
+
+    }
+    div {
+        display: inline-grid;
+
+    }
+
+
+    #all-btn {
+        width: max-content;
+        height: max-content;
+        left: 200px;
+
+
+    }
+
+    #more-btn {
+        width: max-content;
+        height: max-content;
+        left: 200px;
+
+    }
+
+    .playlist {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        overflow: scroll;
+        height: 450px;
+        display: initial;
+
+    }
+
+    .curated {
+        grid-row-start: 1;
+        overflow: scroll;
+        height: 450px;
+        overflow-x: hidden;
+        display: initial;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+    }
+    .playlist::-webkit-scrollbar, .curated::-webkit-scrollbar {
+        width: 10px;
+
+    }
+
 
     .head {
         background-color: #020873;
         width: 834px;
         height: 90px;
+
     }
     #muzak {
         position: revert;
+
     }
     #curated {
         position: relative;
         bottom: 698px;
+
     }
     #playlist, #curated{
         margin-top: 40px;
+
     }
     footer {
         margin-top: 0;
+
     }
 }
