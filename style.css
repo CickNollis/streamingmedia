@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: #FFFFFF;
-    font-family: Raleway, sans-serif;
+    font-family: "Optima", sans-serif;
     width: 375px;
     margin: auto;
     
@@ -405,7 +405,6 @@ audio::-webkit-media-controls-enclosure {
     body {
         width: 834px;
         margin: 0 auto;
-        font-family: "Raleway" sans-serif;
 
     }
     
